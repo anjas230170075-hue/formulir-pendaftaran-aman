@@ -1,0 +1,94 @@
+/* Warna latar belakang gradasi */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1c3f3a, #0a1f2e);
+  color: #fffdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Kotak form bergaya glass (transparan halus) */
+form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 340px;
+  text-align: center;
+}
+
+/* Judul */
+h1 {
+  color: #38d9a9;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: left; /* biar rata kiri */
+  margin-left: 10px; /* geser ke kanan */
+  position: absolute;
+  top: 10px; /* atur jarak dari atas halaman */
+}
+/* Label dan input */
+label {
+  display: block;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #000000;
+}
+
+/* Tombol biru glowing */
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.6);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #48cae4, #0096c7);
+  box-shadow: 0 0 20px rgba(72, 202, 228, 0.8);
+}
+
+/* Tambahan kecil untuk tampilan responsif */
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+}
+input:invalid {
+  background-color: #ffefef;
+}
+input:valid {
+  background-color: #eaffea;
+}
+.error-msg {
+  color: #ff4d4d;
+  font-size: 0.85em;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+

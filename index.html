@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Aman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Formulir Pendaftaran Seminar</h1>
+
+  <form id="registerForm">
+    <!-- Nama Lengkap -->
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" required>
+    <span id="namaError" class="error-msg"></span><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required>
+    <span id="emailError" class="error-msg"></span><br><br>
+
+    <!-- Nomor HP -->
+    <label for="hp">No. HP:</label><br>
+    <input type="text" id="hp" required>
+    <span id="hpError" class="error-msg"></span><br><br>
+
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+
+  <!-- Library untuk enkripsi -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+  <!-- Library Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <!-- File JavaScript utama -->
+  <script src="script.js"></script>
+</body>
+</html>
